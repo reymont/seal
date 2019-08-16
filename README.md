@@ -139,7 +139,7 @@ python manage.py createsuperuser
 admin/123456
 
 
-python manage.py runserver 0.0.0.0:8001
+python manage.py runserver 0.0.0.0:8000
 
 http://127.0.0.1:8001
 
