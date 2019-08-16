@@ -116,6 +116,8 @@ mutation deleteUser {
 }
 ```
 
+### ModuleNotFoundError: No module named 'win32api'
+pip install pypiwin32
 
 ## 部署
 * mysql 5.7 / sqlite
@@ -129,13 +131,17 @@ cd seal
 
 ## django 2.2 不支持 低版本的 sqlite,如果想使用sqlite  存储数据 ，请根据这个博客 https://www.jianshu.com/p/cdacf4b74646 进行升级
 
-python36  -m  pip  install -r requirements.txt
-python36 manage.py makemigrations
-python36 manage.py migrate
-python36 manage.py createsuperuser
+python -m  pip  install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+
+admin/123456
 
 
-python36  manage.py  runserver 0.0.0.0:8001
+python manage.py runserver 0.0.0.0:8001
+
+http://127.0.0.1:8001
 
 //
 nohup  python36  manage.py  runserver 0.0.0.0:8001  >>  /tmp/http.log   2>&1  & 

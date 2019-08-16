@@ -33,7 +33,7 @@ dashboard-admin-token-dhhmc                      kubernetes.io/service-account-t
 
 ## 3.查询token
 ```
-[root@k8s-master ~]#  kubectl describe secret dashboard-admin-token-dhhmc   -n kube-system
+kubectl describe secret kubernetes-dashboard-token-qcpb1   -n kube-system
 Name:         dashboard-admin-token-dhhmc
 Namespace:    kube-system
 Labels:       <none>
